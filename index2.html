@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>H5 audio Demo</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="css/audio2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/audio2.js"></script>
+</head>
+
+<body>
+    <div class="content">
+    </div>
+    <div class="audio-wrapper">
+        <audio size="#4.50MB" duration="#01:57" filename="#Launch_Kan R. Gao.mp3">
+            <source src="http://file.duzhai.net/Files/Audio/2017-08/af01ab05-d112-4ad7-9cff-2cfecced5bc6.mp3" type="audio/mp3">
+        </audio>
+        <div class="audio-left">
+            <img id="audioPlayer" src="./image/play.png">
+        </div>
+        <div class="audio-mid">
+            <div class="mid-left">
+                    <span class="audio-length" id="audioCurTime">00:00</span>/<span class="audio-length">01:57</span>
+            </div>
+            <div class="mid-right">
+                <p></p>
+                <div class="progress-bar-bg" id="progressBarBg">
+                    <span id="progressDot"></span>
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <!-- <div class="audio-time"> -->
+                    <!-- <span class="audio-length-current" id="audioCurTime">00:00</span> -->
+                    <!-- <span class="audio-length-total">01:57</span> -->
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="audio-right">
+            <img id="audioVolume" src="./image/volume.png">
+        </div>
+        <div class="audio-set-volume">
+            <div class="volume_bar_bg" id="volumeBarBg">
+                <div class="volume_bar" id="volumeBar" style="height: 60%;"></div>
+                <span id="volumeDot" style="bottom: 40%;"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+.content {
+    background-color: #fcfcfc;
+    height: 320px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+}
+
+
+.audio-wrapper {
+    background-color: #fcfcfc;
+    margin: 10px auto;
+    max-width: 340px;
+    height: 32px;
+    border: 1px solid #e0e0e0;
+    color: #3e3e3e;
+    border-radius: 16px;
+}
+
+.audio-left {
+    float: left;
+    text-align: center;
+    width: 12%;
+    height: 100%;
+}
+
+.audio-left img {
+    width: 20px;
+    position: relative;
+    top: 6px;
+    margin: 0;
+    display: initial;   /* 解除与app的样式冲突 */
+    cursor: pointer;
+}
+
+.audio-mid {
+    margin-left: 0%;
+    margin-right: 1%;
+    float: left;
+    width: 74%;
+    height: 100%;
+}
+
+.audio-mid p {
+    font-size: 15px;
+    height: 35%;
+    margin: 1px 0 2px 0;
+
+    /* 歌曲名称只显示在一行，超出部分显示为省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 243px;   /* 要适配小屏幕手机，所以最大宽度先设小一点，后面js根据屏幕大小重新设置 */
+}
+
+.mid-left {
+    width: 25%;
+    float: left;
+    padding-top: 4px; 
+}
+.mid-right {
+    width: 68%;
+    float: right;
+    padding-top: 10px;
+}
+
+.audio-right {
+    margin-right: 1%;
+    float: right;
+    width: 8%;
+    height: 100%;
+}
+
+.audio-right img {
+    width: 20px;
+    position: relative;
+    top: 6px;
+    margin: 0;
+    display: initial;   /* 解除与app的样式冲突 */
+    cursor: pointer;
+}
+
+.progress-bar-bg {
+    background-color: #d9d9d9;
+    position: relative;
+    height: 5px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    background-color: #649fec;
+    width: 0;
+    height: 5px;
+}
+
+.progress-bar-bg span {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #3e87e8;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.audio-time {
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+
+.audio-length {
+    font-size: 12px;
+}
+
+.audio-length-total {
+    float: right;
+    font-size: 12px;
+}
+
+.audio-length-current {
+    float: left;
+    font-size: 12px;
+}
+
+.audio-set-volume {
+    background-color: #fcfcfc;
+    position: relative;
+    bottom: 101px;
+    width: 32px;
+    height: 100px;
+    right: -300px;
+    z-index: 999;
+    display: none;
+}
+
+.audio-show-volume {
+    display: block !important;
+}
+
+.volume_bar_bg {
+    background-color: #47a3da;
+    position: relative;
+    margin: auto;
+    bottom: 0px;
+    width: 5px;
+    height: 100px;
+    right: 0px;
+    border-radius: 2.5px;
+}
+
+.volume_bar {
+    position: absolute;
+    width: 100%;
+    border-radius: 2.5px;
+    background-color: #333;
+    height: 0;
+    display: block;
+    top: 0;
+}
+
+.volume_bar_bg span {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #3e87e8;
+    border-radius: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    left: 50%;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
